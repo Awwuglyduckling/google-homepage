@@ -1,21 +1,24 @@
 <!DOCTYPE html>
 <style>
 
-
-
+    
     .center{
         text-align: center;
         display:block;
         margin-left: auto;
         margin-right: auto;
-        margin-top: 109px;
-        margin-bottom: 0px;
-        
-        
-        
-        
-        
+        margin-top: 139px;
+        margin-bottom: 0px;      
 }
+
+    .center2 {
+        text-align: center;
+        display:block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 40px;
+        margin-bottom: 0px;
+    }
         .bar{
         width: 527px;
         height: 34px;
@@ -30,18 +33,28 @@
         
 
     }
+
+    .footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(245, 245, 245);
+  
+}
+
     #button1{
         width: 135px;
         height: 30px;
         border: thin;
-        background-color: rgb(211, 210, 210);
+        background-color: rgb(245, 245, 245);
         
 }
     #button2{
         width: 135px;
         height: 30px;
         border-style: none;
-        background-color: rgb(211, 210, 210);
+        background-color: rgb(245, 245, 245);
 }
     #container{
         
@@ -63,18 +76,24 @@ li {
   font-family: Arial, sans-serif;
   font-size: 13px;
 }
-     a {
-         text-decoration: none;
-    }
-    a:link {
-        color: black;
-    }
-    a:visited {
-        color: black;
-    }
-    a:hover {
-        text-decoration: underline;
-    }
+    a.class1 {color: black;
+    text-decoration: none;}
+    a.class1:link {color: black;}
+    a.class1:visited {color: black;}
+    a.class1:hover {text-decoration: underline;}
+
+    A.class2 {color:blue;
+    font-size: 12px;}
+    A.class2:link {text-decoration: none; color: blue;}
+    A.class2:visited {text-decoration: none; color: blue;}
+    A.class2:hover {text-decoration: underline; color: blue;}
+    A.class2:active {text-decoration: none; color: blue;}
+
+    A.class3 {color: grey;}
+    A.class3:link {text-decoration: none; color: grey;}
+    A.class3:visited {text-decoration: none; color: grey;}
+    A.class3:hover {text-decoration: underline; color: grey;}
+    A.class3:active {text-decoration: none; color:grey;}
 
     .box {
         background-color: rgb(0, 132, 255);
@@ -88,11 +107,11 @@ li {
 
 <header>
     <ul>
-        <li><a href="https://about.google/?fg=1&utm_source=google-US&utm_medium=referral&utm_campaign=hp-header">About</a></li>
-        <li><a href="https://store.google.com/US/?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-US">Store</a></li>
-        <li style="float: right;"><a class="box" href="https://accounts.google.com/ServiceLogin/signinchooser?hl=en&passive=true&continue=https%3A%2F%2Fwww.google.com%2Fimghp%3Fhl%3Den%26tab%3Dwi%26ogbl&ec=GAZAAg&flowName=GlifWebSignIn&flowEntry=ServiceLogin">Sign in</a></li>
-        <li style="float: right;"><a href="https://www.google.com/imghp?hl=en&tab=wi&ogbl">Images</a></li>
-        <li style=float:right;><a href="https://mail.google.com/mail/u/0/?ogbl">Gmail</a></li>
+        <li><a class="class1" href="https://about.google/?fg=1&utm_source=google-US&utm_medium=referral&utm_campaign=hp-header">About</a></li>
+        <li><a class="class1" href="https://store.google.com/US/?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-US">Store</a></li>
+        <li style="float: right;"><a class="box class1" href="https://accounts.google.com/ServiceLogin/signinchooser?hl=en&passive=true&continue=https%3A%2F%2Fwww.google.com%2Fimghp%3Fhl%3Den%26tab%3Dwi%26ogbl&ec=GAZAAg&flowName=GlifWebSignIn&flowEntry=ServiceLogin">Sign in</a></li>
+        <li style="float: right;"><a class="class1" href="https://www.google.com/imghp?hl=en&tab=wi&ogbl">Images</a></li>
+        <li style=float:right;><a class="class1" href="https://mail.google.com/mail/u/0/?ogbl">Gmail</a></li>
         
     </ul>
     </header>
@@ -110,10 +129,27 @@ li {
     <button type="button home-button" id="button1" >Google Search</button>
     <button type="button contact-button" id="button2">I'm Feeling Lucky</button>
 </div>
-<div class="center">
-    <a href="https://beinternetawesome.withgoogle.com/en_us/interland">Help kids Be Internet Awesome</a>
+<div class="center2">
+    <a class="class2" href="https://beinternetawesome.withgoogle.com/en_us/interland">Help kids Be Internet Awesome</a>
+</div>
+<div class="footer">
+
+    <ul>
+        
+        <li><a class="class3" href="https://ads.google.com/intl/en_us/home/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Advertising</a></li>
+        <li><a class="class3" href="https://smallbusiness.withgoogle.com/?subid=us-en-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google&utm_medium=ep&utm_campaign=google_hpbfooter&utm_content=google_hpbfooter&gmbsrc=us-en_US-et-gs-z-gmb-s-z-u~sb-g4sb_srvcs-u#!/">Business</a></li>
+        <li><a class="class3" href="https://www.google.com/search/howsearchworks/?fg=1">How Search Works</a>
+        <li style=float:right><a class="class3" href="https://www.google.com/preferences?hl=en">Settings</a>
+        <li style=float:right><a class="class3" href="https://policies.google.com/terms?hl=en&fg=1">Terms</a>
+        <li style=float:right><a class="class3" href="https://policies.google.com/privacy?hl=en&fg=1">Privacy</a>
+
+        </ul>
+
 </div>
 
 
+</body>
 
-</body>    
+
+     
+   
